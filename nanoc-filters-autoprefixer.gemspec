@@ -1,6 +1,6 @@
 Gem::Specification.new do |spec|
   spec.name          = "nanoc-filters-autoprefixer"
-  spec.version       = "1.0.0"
+  spec.version       = "1.0.1"
   spec.authors       = ["Roger Que"]
   spec.email         = ["git@alerante.net"]
 
@@ -13,7 +13,7 @@ Gem::Specification.new do |spec|
   spec.metadata["source_code_uri"] = spec.homepage
 
   spec.add_dependency "autoprefixer-rails"
-  spec.add_dependency "nanoc-core", "~> 4.11.13"
+  spec.add_dependency "nanoc-core", "~> 4.11", ">= 4.11.13"
 
   spec.files         = Dir.chdir(File.expand_path('..', __FILE__)) do
     `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
